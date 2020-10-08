@@ -1,0 +1,235 @@
+<?php
+
+/**
+ * ガラケー用テーブル出力
+ * Handle Shortcode [table-while id=<id> key=<key> key_disp=<key_disp>/]
+ */
+function tablepress_ks_table_while_shortcode( $shortcode_atts ) {
+
+	/*
+	 * ガラケーのテーブルループ内を変更する場合
+	 * 以下の$org_contentを変更してください。
+	 * なお「%%カラム名%%」が該当の値に置換されます。
+	 */
+	$org_content =  <<< EOM
+<tr>
+<td colspan="3" width="70%" bgcolor="#e7e7e7"><font size="-1" color="#004ba7">%%節%%</font></td>
+</tr>
+<tr>
+<td width="70%" bgcolor="#FFFFFF"><font size="-1" color="#004ba7"><font size="-1" color="#666666">%%日%% %%時間%%</font><br><font size="-1" color="#666666">%%対戦相手%%</font></td>
+<td width="10%" bgcolor="#FFFFFF" align="center"><font size="-1" color="#666666">%%H/A%%</font></td>
+<td width="20%" bgcolor="#FFFFFF" align="center"><font size="-1" color="#666666">%%詳細%%</font><font size="-1" color="#666666">%%勝敗%%</font></td>
+</tr>
+EOM;
+
+
+
+	$is_all=false;
+	$shown_tables=array();
+	// parse Shortcode attributes, only allow those that are specified
+	$default_shortcode_atts = array(
+			'id' => 2,
+			'key' => null,
+			'key_disp' => 1,
+		);
+	$shortcode_atts = shortcode_atts( $default_shortcode_atts, $shortcode_atts );
+	if(empty($shortcode_atts['id'])){
+		return '';
+	}
+	$while_key = (isset($shortcode_atts['key']) ? $shortcode_atts['key'] : htmlspecialchars($_GET['key'], ENT_QUOTES));
+	if(empty($while_key)){
+		$is_all = true;
+	}
+	$table_id = preg_replace( '/[^a-zA-Z0-9_-]/', '', $shortcode_atts['id'] );
+	$table = TablePress::$model_table->load( $table_id, true, true ); // Load table data, but don't load options or visibility
+	if ( is_wp_error( $table ) ) {
+		return "[table &#8220;{$table_id}&#8221; could not be loaded /]<br />\n";
+	}
+
+	$count=0;
+	$result='';
+	$rowmax=sizeof($table['data']);
+	$colmax=sizeof($table['data'][0]);
+	
+	// keyが何カラム目かを設定
+	$keyno=0;
+//	print_r($keyset);
+
+	// 1行目はカラム名なので飛ばす
+	for($i=1; $i<$rowmax; $i++){
+		// keyが無い値はskip
+		if(empty($table['data'][$i][$keyno])){
+			continue;
+		}
+		// keyがパラメータと同一なら出力開始
+		if($is_all === true ||$table['data'][$i][$keyno]===$while_key){
+			$content = $org_content;
+//			print_r($table['data'][$i]);
+//			print_r("<br>\n");
+//			foreach($table['data'][$i]as $column){
+			for($j=0; $j<$colmax; $j++){
+//				$source=str_replace();
+				$search=$table['data'][0][$j];
+				
+//			print_r($search);
+//			print_r("<br>\n");
+				$replace=$table['data'][$i][$j];
+				// 中身がphpなら実行
+				if(strpos($replace,'<?php')!==FALSE){
+					ob_start();
+					eval( '?>' . $replace );
+					$replace = ob_get_clean();
+				}
+				
+				$content=str_replace('%%'.$search.'%%',$replace,$content);
+			}
+/*			$count=$count+1;
+			if($count%5===0){
+				$result=$result.'<!--KTAI_PAGE-->';
+			}
+*/
+			$result=$result.$content;
+		}
+	}
+	
+	
+	return $result;
+
+}
+
+/**
+ * PC向けテーブル出力
+ * Handle Shortcode [table-while id=<id> key=<key> key_disp=<key_disp>/]
+ */
+function tablepress_table_while_shortcode( $shortcode_atts ) {
+	$shown_tables=array();
+	// parse Shortcode attributes, only allow those that are specified
+	$default_shortcode_atts = array(
+			'id' => 2,
+			'key' => null,
+			'key_disp' => 1,
+		);
+	$shortcode_atts = shortcode_atts( $default_shortcode_atts, $shortcode_atts );
+
+	$table_id = preg_replace( '/[^a-zA-Z0-9_-]/', '', $shortcode_atts['id'] );
+	$table = TablePress::$model_table->load( $table_id, true, true ); // Load table data, but don't load options or visibility
+	if ( is_wp_error( $table ) ) {
+		return "[table &#8220;{$table_id}&#8221; could not be loaded /]<br />\n";
+	}
+	
+	$while_key = $shortcode_atts['key'];
+	if(empty($while_key)){
+		return '';
+	}
+	
+	$_render = TablePress::load_class( 'TablePress_Render', 'class-render.php', 'classes' );
+
+	$default_shortcode_atts = $_render->get_default_render_options();
+	$default_shortcode_atts = apply_filters( 'tablepress_shortcode_table_default_shortcode_atts', $default_shortcode_atts );
+//	print_r($shortcode_atts);
+	$shortcode_atts = apply_filters( 'tablepress_shortcode_table_shortcode_atts', $shortcode_atts );
+//	print_r($shortcode_atts);
+	
+	$render_options = apply_filters( 'tablepress_table_render_options', $render_options, $table );
+	
+	foreach ( $shortcode_atts as $key => $value ) {
+		// have to check this, because strings 'true' or 'false' are not recognized as boolean!
+		if ( 'true' == strtolower( $value ) ) {
+			$render_options[ $key ] = true;
+		} elseif ( 'false' == strtolower( $value ) ) {
+			$render_options[ $key ] = false;
+		} elseif ( is_null( $value ) && isset( $table['options'][ $key ] ) ) {
+			$render_options[ $key ] = $table['options'][ $key ];
+		} else {
+			$render_options[ $key ] = $value;
+		}
+	}
+	if ( ! isset( $shown_tables[ $table_id ] ) ) {
+		$shown_tables[ $table_id ] = array(
+			'count' => 0,
+			'instances' => array(),
+		);
+	}
+	$count = $shown_tables[ $table_id ]['count'];
+	$render_options['html_id'] = "tablepress-{$table_id}";
+	$render_options['alternating_row_colors']=true;
+	$render_options['table_head']=true;
+	$render_options['use_datatables']=true;
+	$render_options['row_hover']=true;
+	$render_options['cellspacing']=false;
+	$render_options['cellpadding']=false;
+	$render_options['border']=false;
+	
+	foreach ( $table[data] as $number => $value ) {
+		if($number!==0&&$value[0]!==$while_key){
+			$table[visibility][rows][$number]=0;
+		}else{
+//			print_r($value[0]);
+//			print_r("<br>\n");
+		}
+	}
+	$key_disp = $shortcode_atts['key_disp'];
+//	print_r($key_disp);
+	if(!$key_disp){
+		$table[visibility][columns][0]=0;
+	}
+	
+//	$table[visibility][rows][1]=0;
+	
+	$_render->set_input($table,$render_options);
+	return $_render->get_output();
+}
+
+/*
+Plugin Name: TablePress Extension: PHP in tables
+Plugin URI: http://tablepress.org/extensions/php-in-tables/
+Description: Custom Extension for TablePress to allow and execute PHP code in table cells
+	TablePressでセル内のphpを実行可能にする。
+Version: 1.0
+Author: Tobias Bäthge
+Author URI: http://tobias.baethge.com/
+*/
+
+add_filter( 'tablepress_cell_content', 'tablepress_execute_php_in_cells', 10, 4 );
+
+function tablepress_execute_php_in_cells( $cell_content, $table_id, $row_number, $column_number ) {
+	ob_start();
+	eval( '?>' . $cell_content );
+	return ob_get_clean();
+}
+
+// tablepressの編集可能ボタンを非表示
+add_filter( 'tablepress_edit_link_below_table', '__return_false' );
+
+/*
+ * 引数の投稿が存在したらリンク吐き出し
+ * TablePress内から呼ぶ
+ */
+function get_post_link($title='',$notdata='-'){
+	trim($title);
+	if(empty($title)){
+		echo $notdata;
+	}else{
+		$page = get_page_by_title( $title,'OBJECT','match');
+		if(isset($page->ID)){
+			echo '<a href="'.get_permalink( $page->ID ).'">';
+			echo get_post_meta($page->ID,'home_points',true);
+			echo '-';
+			echo get_post_meta($page->ID,'away_points',true);
+			echo '</a>';
+		}else{
+			echo $notdata;
+		}
+	}
+}
+
+
+if ( ! is_admin() ){
+	
+	if(function_exists('is_ktai') && is_ktai()){
+		add_shortcode( 'table-while', 'tablepress_ks_table_while_shortcode' );
+	}else{
+		add_shortcode( 'table-while', 'tablepress_table_while_shortcode' );
+	}
+	
+}

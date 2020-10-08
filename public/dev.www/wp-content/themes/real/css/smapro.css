@@ -1,0 +1,403 @@
+@charset "uft-8";
+
+/*----------------------------------------------------------------------------------
+				page
+------------------------------------------------------------------------------------*/
+
+body {
+	width:100%;
+	padding:0;
+	margin:0;
+	border:0;
+	background:#fff;
+	font-family:Oswald,"ÉqÉâÉMÉmäpÉS Pro W3","Hiragino Kaku Gothic Pro";
+	overflow-x: hidden;
+}
+#container {
+	position:absolute; z-index:1;
+	width:100%;
+	left:0;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.clear {
+	clear:both;
+}
+.display-block {
+	display: block;
+}
+.space {  
+	width:100%;
+	margin:2px 0 0 0;
+}
+.underline {
+	width:100%;
+	border-bottom:1px solid #FFF;
+}
+
+/*----------------------------------------------------------------------------------
+				fsmapro
+------------------------------------------------------------------------------------*/
+
+.fsmapro {
+	text-align:center;
+	padding: 3px 0 3px 0;
+	height:auto;
+	color: #fff;
+	font-weight:300;
+	font-size:10px;
+	background:#000;
+}
+
+/*----------------------------------------------------------------------------------
+				title_bar
+------------------------------------------------------------------------------------*/
+#title_bar {
+	position: relative;
+	padding: 0 0 0 6px;
+	height:40px;
+	line-height:40px;
+	color: #fff;
+	font-weight:300;
+	font-size:15px;
+	background:#000;
+}
+.ayuda {
+	position: absolute;
+	right: 20px;
+	top: -16px;
+}
+.ayuda a {
+	font-size:12px;
+	line-height:12px;
+	color:#fff;
+	text-decoration:none;
+}
+
+/*----------------------------------------------------------------------------------
+				title_bar2
+------------------------------------------------------------------------------------*/
+#title_bar2 {
+	position: relative;
+	padding: 0 0 0 6px;
+	height:26px;
+	line-height:26px;
+	color: #404040;
+	font-weight:bold;
+	font-size:14px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#EDEDED;
+}
+/*----------------------------------------------------------------------------------
+				ptext
+------------------------------------------------------------------------------------*/
+.ptext {
+	font-size:12px;
+	line-height:16px;
+	padding:6px 10px 6px 10px;
+	color:#3c3c3c;
+}
+.ptext a {
+	font-size:12px;
+	line-height:16px;
+	padding:6px 10px 6px 10px;
+	text-decoration:none;
+	color:#3c3c3c;
+}
+/*----------------------------------------------------------------------------------
+				barfree
+------------------------------------------------------------------------------------*/
+#barfree {
+	position: relative;
+	padding: 3px 6px 3px 6px;
+	text-align:center;
+	color: #fff;
+	font-weight:300;
+	font-size:14px;
+	background:#fe5b00;
+}
+
+
+
+/*----------------------------------------------------------------------------------
+				carriertext
+------------------------------------------------------------------------------------*/
+
+.mymenu{
+	height: auto;
+	width: auto;
+	padding-bottom: 10px;
+	overflow-x: hidden;
+}
+#carriertext {
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	line-height:16px;
+	margin: 0;
+	padding:10px 0px 0px 0px;
+}
+
+
+/*----------------------------------------------------------------------------------
+			carrierlogin
+------------------------------------------------------------------------------------*/
+
+
+.carrierlogin {
+	width: 100%;
+	border-top: 1px #d1d1d1 solid;
+	border-bottom: 1px #d1d1d1 solid;
+	height:100px;
+	overflow-x: hidden;
+	margin-top:16px;
+}
+
+.carrierlogin ul.career-select {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border-left: 1px #d1d1d1 solid;
+	border-right: 1px #d1d1d1 solid;
+	list-style-type: none;
+	text-align: center;
+}
+.carrierlogin ul.career-select li {
+	width: 33%;
+	float: left;
+	margin: 0 auto;
+}
+.carrierlogin ul.career-select li a {
+	display: block;
+	border-left: 1px #d5d5d5 solid;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 100px;
+}
+.career-select li:first-child a{
+	border-left:none;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------
+		bt free
+------------------------------------------------------------------------------------*/
+
+.bt {
+	width:90%;
+	padding: 10px  0px  10px  0px;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+	background: #000;
+}
+.bt a {
+	color: #fff;
+	font-size:14px;
+	text-decoration:none;
+}
+/*----------------------------------------------------------------------------------
+		btmymenutext
+------------------------------------------------------------------------------------*/
+#btmymenutext {
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	line-height:18px;
+	margin: 0;
+}
+
+/*----------------------------------------------------------------------------------
+		btmymenuON
+------------------------------------------------------------------------------------*/
+
+.btmymenuON {
+	width:90%;
+	padding: 10px  0px  10px  0px;
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+	background: #000;
+}
+.btmymenuON a {
+	color: #fff;
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+
+
+/*500*/
+
+.btmymenuON2 {
+	width:90%;
+	padding: 20px  0px  20px  0px;
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+	background: #fe5b00;
+}
+.btmymenuON2 a {
+	color: #fff;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+/*----------------------------------------------------------------------------------
+		btmymenuOFF
+------------------------------------------------------------------------------------*/
+
+.btmymenuOFF {
+	width:90%;
+	padding: 10px  0px  10px  0px;
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+}
+.btmymenuOFF a {
+	color: #dfdfdf;
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+/*----------------------------------------------------------------------------------
+		btauhikitsugi
+------------------------------------------------------------------------------------*/
+
+.btauhikitsugi {
+	width:90%;
+	padding: 10px  0px  10px  0px;
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+	background: #fe5b00;
+}
+.btauhikitsugi a {
+	color: #fff;
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+/*----------------------------------------------------------------------------------
+		textserv
+------------------------------------------------------------------------------------*/
+
+#textserv {
+	width:100%;
+	padding:0;
+	margin:0;
+	border:0;
+	overflow-x: hidden;
+}
+.textservback {
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	background: #EDEDED;
+}
+
+.textservarena {
+	color:#3C3C3C;
+	font-size:12px;
+	line-height:16px;
+	padding:6px
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------
+		 			main menu
+------------------------------------------------------------------------------------*/
+
+div#navigation{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	border-collapse: collapse;
+
+}
+div#navigation .tab {
+	text-align: center;
+	width: auto;
+	height: 36px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-top-color: #627196;
+	border-right-color: #627196;
+	border-bottom-color: #808798;
+	border-left-color: #808798;
+	margin: 0px;
+}
+
+div#navigation .box1{
+	text-align: center;
+	height: 36px;
+	width: 20%;
+}
+
+div#navigation .a-box{
+	height: 36px;
+	width: 100%;
+}
+
+
+
+
+/* Å°Å°Å°Ç®ñ‚Ç¢çáÇÌÇπÅ°Å°Å°Å°Å°Å°Å°Å°Å°Å°Å°Å°Å°Å°Å° */
+
+.otoiawase{
+	height: auto;
+	width: 100%;
+}
+.otoiawase-box{
+	height: auto;
+	width: auto;
+	font-size: 10px;
+	line-height: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.otoiawase-box .form1{
+	height: 50px;
+	width: 100%;
+	margin-bottom: 4px;
+}
+.otoiawase-box .form2{
+	height: 25px;
+	width: 100%;
+}
+.otoiawase-box .henshinsaki-box {
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+.otoiawase .submit {
+	margin-bottom: 10px;
+}
+.otoiawase .submit .box {
+	height: 36px;
+	width: 300px;
+}
+

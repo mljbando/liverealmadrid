@@ -1,0 +1,332 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage real
+ */
+ 
+add_filter ('the_content', 'wpautop');
+?>
+
+<?php include (COMMONTEMPLATEPATH . '/common_header.php'); ?>
+
+
+
+
+<div id="contents" class="clearfix">
+
+	<div id="contentsleft" class="clearfix">
+
+		<div id="contentsarea" class="clearfix">
+
+
+
+
+
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+
+<div id="matchdetail">
+
+<p class="matchdate">
+<i class="fa fa-clock-o"></i><?php print_r(get_post_meta($post->ID,'match_date',true));?>
+</p>
+
+<p class="matchcompe">
+<?php print_r(get_post_meta($post->ID,'section',true));?>
+</p>
+
+<p class="match_video">
+<?php if(post_custom('match_video')): ?>
+<a href="<?php echo post_custom('match_video'); ?>" target="_blank" rel="noreferrer"><span class="blinking"><i class="fa fa-play-circle-o" aria-hidden="true"></i></span></a>
+<?php endif; ?>
+</p>
+
+<p class="matchstatus">
+<?php print_r(get_post_meta($post->ID,'status',true));?>
+<?php print_r(get_post_meta($post->ID,'stradio',true));?>
+</p>
+
+
+
+
+<div id="matchsbox1">
+
+
+<div class="Hteam">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_team',true)));?>
+</div>
+
+<div class="Hscore">
+<?php print_r(get_post_meta($post->ID,'home_points',true));?>
+</div>
+
+<div class="score">
+<?php print_r(nl2br(get_post_meta($post->ID,'half_all_score',true)));?>
+</div>
+
+<div class="Ascore">
+<?php print_r(get_post_meta($post->ID,'away_points',true));?>
+</div>
+
+
+<div class="Ateam">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_team',true)));?>
+</div>
+
+</div><!--/matchbox1-->
+
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'goal_home',true)));?>
+</div>
+
+<div class="result">
+<i class="fa fa-life-ring"></i>
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'goal_away',true)));?>
+</div>
+</div><!--/matchbox2-->
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'foul_home',true)));?>
+</div>
+
+<div class="result">
+<i class="fa fa-square-o"></i>
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'foul_away',true)));?>
+</div>
+</div><!--/matchbox2-->
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_leave',true)));?>
+</div>
+
+<div class="result">
+<i class="fa fa-square"></i>
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_leave',true)));?>
+</div>
+</div><!--/matchbox2-->
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_change',true)));?>
+</div>
+
+<div class="result">
+<i class="fa fa-refresh"></i>
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_change',true)));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+
+
+<p class="matchmenber">
+メンバー
+</p>
+<?php
+$home_teamst = get_post_meta($post->ID,'home_teamst',true);
+$away_teamst = get_post_meta($post->ID,'away_teamst',true);
+if( empty($home_teamst) && empty($home_teamst) ):
+?>
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(get_post_meta($post->ID,'home_goal_keeper',true));?>
+</div>
+
+<div class="result">
+GK
+</div>
+
+<div class="Aresult">
+<?php print_r(get_post_meta($post->ID,'away_goal_keeper',true));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_defense',true)));?>
+</div>
+
+<div class="result">
+DF
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_defense',true)));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_midfielder',true)));?>
+</div>
+
+<div class="result">
+MF
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_midfielder',true)));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_forward',true)));?>
+</div>
+
+<div class="result">
+FW
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_forward',true)));?>
+</div>
+
+</div><!--/matchbox2-->
+
+<?php
+else:
+?>
+<!--スタメン-->
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(nl2br($home_teamst));?>
+</div>
+
+<div class="result">
+11
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br($away_teamst));?>
+</div>
+
+</div><!--/スタメン-->
+<?php
+endif;
+?>
+
+
+<div id="matchsbox2">
+<div class="Hresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'home_sub',true)));?>
+</div>
+
+<div class="result">
+SU
+</div>
+
+<div class="Aresult">
+<?php print_r(nl2br(get_post_meta($post->ID,'away_sub',true)));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+<div id="matchsbox2">
+
+<div class="Hresult">
+<?php print_r(get_post_meta($post->ID,'home_commanding_officer',true));?>
+</div>
+
+<div class="result">
+CO
+</div>
+
+<div class="Aresult">
+<?php print_r(get_post_meta($post->ID,'away_commanding_officer',true));?>
+</div>
+
+</div><!--/matchbox2-->
+
+
+
+
+
+
+
+</div><!--/matchdetail-->
+
+
+
+
+
+
+
+
+
+<?php
+	endwhile;
+endif; ?>
+
+
+		</div><!--/contentsarea-->
+
+
+
+<?php
+if (is_device()==="pc"){
+	comments_template('/comments-footer.php');
+//	comments_template('/comments.php');
+}
+else{
+	comments_template('/comments.php');
+}
+?>
+
+
+<?php include (COMMONTEMPLATEPATH . '/timeline_pc.php'); ?>
+
+<?php include (COMMONTEMPLATEPATH . '/timeline_sp.php'); ?>
+
+
+</div><!--/contentsleft-->
+
+
+<div id="sp">
+<?php include (COMMONTEMPLATEPATH . '/common_sidebar.php'); ?>
+</div>
+
+
+</div><!--/contents-->
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_footer.php'); ?>

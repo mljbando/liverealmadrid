@@ -1,0 +1,132 @@
+<?php
+/**
+Template Name: 固定/試合詳細
+ * @package WordPress
+ */
+get_header(); ?>
+
+
+<div id="bt_fb"><a href="javascript:history.back()"> ＜ 戻る</a></div>
+
+<?php
+while ( have_posts() ) : the_post();
+?>
+
+<div id="title_bar"><?php $cat=get_the_category(); echo $cat[0]->name;?></div>
+
+<div id="newsDetail">
+
+<div id="newsDetailInfo">
+<p class="type">チーム</p>
+<p class="date"><?php the_date(get_option('date_format'));?> / <?php the_time(get_option('time_format')); ?></p>
+</div><!--/newsDetailInfo-->
+
+<div id="newsDetailContent">
+
+<h1><?php the_title(); ?></h1>
+
+<!--ここから各カスタムフィールドの出力-->
+<p>試合日時:
+<?php print_r(get_post_meta($post->ID,'match_date',true));?>
+</p>
+<p>対戦チーム:
+<?php print_r(get_post_meta($post->ID,'opponent',true));?>
+</p>
+<p>節:
+<?php print_r(get_post_meta($post->ID,'section',true));?>
+</p>
+<p>ステータス:
+<?php print_r(get_post_meta($post->ID,'status',true));?>
+</p>
+<p>HOME合計得点:
+<?php print_r(get_post_meta($post->ID,'home_points',true));?>
+</p>
+<p>前後半スコア:
+<?php print_r(nl2br(get_post_meta($post->ID,'half_all_score',true)));?>
+</p>
+<p>AWAY合計得点:
+<?php print_r(get_post_meta($post->ID,'away_points',true));?>
+</p>
+<p>ゴール_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'goal_home',true)));?>
+</p>
+<p>ゴール_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'goal_away',true)));?>
+</p>
+<p>警告_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'foul_home',true)));?>
+</p>
+<p>警告_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'foul_away',true)));?>
+</p>
+<p>退場_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_leave',true)));?>
+</p>
+<p>退場_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_leave',true)));?>
+</p>
+<p>交代_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_change',true)));?>
+</p>
+<p>交代_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_change',true)));?>
+</p>
+<p>チーム_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_team',true)));?>
+</p>
+<p>チーム_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_team',true)));?>
+</p>
+<p>CO_H:
+<?php print_r(get_post_meta($post->ID,'home_commanding_officer',true));?>
+</p>
+<p>CO_A:
+<?php print_r(get_post_meta($post->ID,'away_commanding_officer',true));?>
+</p>
+<p>GK_H:
+<?php print_r(get_post_meta($post->ID,'home_goal_keeper',true));?>
+</p>
+<p>GK_A:
+<?php print_r(get_post_meta($post->ID,'away_goal_keeper',true));?>
+</p>
+<p>DF_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_defense',true)));?>
+</p>
+<p>DF_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_defense',true)));?>
+</p>
+<p>MF_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_midfielder',true)));?>
+</p>
+<p>MF_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_midfielder',true)));?>
+</p>
+<p>FW_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_forward',true)));?>
+</p>
+<p>FW_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_forward',true)));?>
+</p>
+<p>SU_H:
+<?php print_r(nl2br(get_post_meta($post->ID,'home_sub',true)));?>
+</p>
+<p>SU_A:
+<?php print_r(nl2br(get_post_meta($post->ID,'away_sub',true)));?>
+</p>
+
+<!--ここまで各カスタムフィールドの出力-->
+
+</div><!--/newsDetailContent-->
+</div><!--/newsDetail-->
+<div style="clear:both;"></div>
+
+
+<?php endwhile; ?>
+
+
+
+
+
+
+
+<?php get_footer(); ?>

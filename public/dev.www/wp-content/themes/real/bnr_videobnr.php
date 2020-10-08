@@ -1,0 +1,1 @@
+<img src="/images/index/bnr_video.jpg" alt="" />

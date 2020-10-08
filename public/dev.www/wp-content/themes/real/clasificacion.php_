@@ -1,0 +1,50 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage Default_Theme
+ */
+/*
+Template Name: clasificacion
+*/
+?>
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_header.php'); ?>
+
+
+<div id="contents" class="clearfix">
+
+	<div id="contentsleft" class="clearfix">
+
+		<div id="contentsarea" class="clearfix">
+
+
+
+<div class="clasificaciontitle">リーガ頁E��表</div>
+
+
+<?php echo do_shortcode( '[table id=1 /]' ); ?>
+
+			<div id="plink" class="clearfix">
+				<div class="pnavi">
+				<div class="pleft"><a href="#" onClick="history.back(); return false;"><i class="fa fa-angle-left"></i> 戻めE/a></div>
+				</div>
+			</div>
+
+
+
+
+		</div><!--/contentsarea-->
+
+	</div><!--/contentsleft-->
+
+		<div id="sp">
+		<?php include (COMMONTEMPLATEPATH . '/common_sidebar.php'); ?>
+		</div>
+
+</div><!--/contents-->
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_footer.php'); ?>
+
+

@@ -1,0 +1,109 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage real
+ */
+?>
+<link rel="canonical" href="http://liverealmadrid.jp/">
+<link type="image/x-icon" href="/images/common/favicon.ico" rel="shortcut icon"/>
+<link rel="apple-touch-icon" href="/path/to/icon.png" />
+<link rel="apple-touch-icon-precomposed" href="/path/to/icon.png" />
+<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/read-text.js"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+
+
+<!--bxslider-->
+<script src="/js/jquery.bxslider.min.js"></script>
+<link href="/css/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  });
+});
+</script>
+<!--/bxslider-->
+
+
+<!--sidr-->
+<script src="/js/jquery.sidr.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+<!--/sidr-->
+
+
+<!--tabmenu-->
+<script type="text/javascript">
+$(function(){
+    $('.tabbox:first').show();
+    $('.tabmenu li:first').addClass('active');
+    $('.tabmenu li').click(function() {
+        $('.tabmenu li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabbox').hide();
+        $($(this).find('a').attr('href')).fadeIn();
+        return false;
+    });
+});
+</script>
+<!--/tabmenu-->
+
+
+
+<!--UA css-->
+<script type="text/javascript">
+(function(){
+    var _UA = navigator.userAgent;
+    if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('Android') > -1) {
+        document.write('<link rel="stylesheet" href="/css/sp.css">');
+    }else if(_UA.indexOf('iPad') > -1){
+        document.write('<link rel="stylesheet" href="/css/layout.css">');
+    }else{
+        document.write('<link rel="stylesheet" href="/css/layout.css">');
+    }
+})();
+</script>
+<!--/UA css-->
+
+
+
+<!--pageTop-->
+<script type="text/javascript">
+$(function() {
+	var topBtn = $('#pageTop');
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+});
+</script><!--/pageTop-->
+
+<!--twitter-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!--/twitter-->
+
+<!--facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script><!--/facebook-->
+

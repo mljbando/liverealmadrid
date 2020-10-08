@@ -1,0 +1,342 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage real
+ */
+?>
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_header.php'); ?>
+
+
+
+<!-- visual -->
+
+<div id="visual">
+<ul>
+<li><iframe width="100%" height="300" src="//www.youtube.com/embed/lWGKPa9q1ro?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+<li><iframe width="100%" height="300" src="//www.youtube.com/embed/fc6KXIELdZg?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+<li><iframe width="100%" height="300" src="//www.youtube.com/embed/BjczGWrbT-s?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+</ul>
+</div>
+
+<!--
+<div id="visualsp">
+<ul class="bxslider">
+<li><iframe width="320" height="180" src="//www.youtube.com/embed/lWGKPa9q1ro?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+<li><iframe width="320" height="180" src="//www.youtube.com/embed/fc6KXIELdZg?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+<li><iframe width="320" height="180" src="//www.youtube.com/embed/BjczGWrbT-s?list=PLaI5lCKwq3IffegCgluKL5NK3b5UBjb90?theme=light&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></li>
+</ul>
+</div>
+-->
+
+
+
+
+
+
+
+	<div id="contents" class="clearfix">
+
+
+		<div id="contentsleft" class="clearfix">
+
+				<div id="news">
+
+					<ul class="tabmenu">
+					    <li><a href="#newscate0">すべて</a></li>
+					    <li><a href="#newscate1">マドリード通信</a></li>
+					    <li><a href="#newscate2">公式声明</a></li>
+					    <li><a href="#newscate3">招集メンバー</a></li>
+					    <li><a href="#newscate4">記者会見</a></li>
+					    <li><a href="#newscate5">メディカルレポート</a></li>
+					</ul>
+
+					<div class="content">
+
+						<div class="tabbox" id="newscate0">
+							<div class="newsaeraleft">
+								<p class="read-title">すべてすべてすべてすべてすべてすべてすべてすべてすべてすべて</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>すべて8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+						<div class="tabbox" id="newscate1">
+							<div class="newsaeraleft">
+								<p class="read-title">マドリード通信マドリード通信マドリード通信マドリード通信</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>マドリード通信8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+						<div class="tabbox" id="newscate2">
+							<div class="newsaeraleft">
+								<p class="read-title">公式声明公式声明公式声明</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>公式声明8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+						<div class="tabbox" id="newscate3">
+							<div class="newsaeraleft">
+								<p class="read-title">招集メンバー招集メンバー招集メンバー</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>招集メンバー8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+						<div class="tabbox" id="newscate4">
+							<div class="newsaeraleft">
+								<p class="read-title">記者会見記者会見記者会見記者会見記者会見記者会見</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>記者会見8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+						<div class="tabbox" id="newscate5">
+							<div class="newsaeraleft">
+								<p class="read-title">メディカルレポートメディカルレポートメディカルレポートメディカルレポート</p>
+								<p class="read-data">2014.7.1 10:00</p>
+								<p class="read-text">キスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+								<p class="read-next"><a href="">この記事へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+								<div class="newsaeraright">
+								<ul>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート1タイトル1タイトル1タイトル1タイトル11タイトル1タイトル1</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート2</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート3</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート4</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート5</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート6</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート7</a></li>
+								<li><a href=""><i class="fa fa-angle-right fa-lg"></i>メディカルレポート8</a></li>
+								</ul>
+								<p class="read-next"><a href="">一覧へ <i class="fa fa-angle-right fa-lg"></i></a></p>
+							</div>
+						</div>
+
+					</div><!--/content-->
+
+				</div><!--/news-->
+
+
+
+
+					<div id="berliveT">
+					<p class="title">ベルナベウLIVE！</p>
+					</div>
+
+				<div id="berlive">
+
+
+
+
+						<ul>
+						<li>
+						<p class="photo"><img src="/images/berlive1.jpg" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive2.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive3.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+						<li>
+						<p class="photo"><img src="/images/berlive1.jpg" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive2.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive3.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li><li>
+						<p class="photo"><img src="/images/berlive1.jpg" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive2.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						<li>
+						<p class="photo"><img src="/images/berlive3.jpg" width="" height="" /></p>
+						<p class="berlive-data">2014.7.2</p>
+						<p class="berlive-text">本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+						</li>
+
+						</ul>
+				</div><!--/berlive-->
+
+								<div id="nextarrowout">
+								<p class="arrow"><a href="">一覧へ<i class="fa fa-angle-right fa-lg"></i></a></p>
+								</div>
+
+
+
+
+
+				<div id="timeline">
+						<ul>
+						<li>
+						<a class="twitter-timeline" href="https://twitter.com/LIVE_R_MADRIDJP" data-widget-id="479850679649849344" data-aria-polite="assertive" width="305" height="753" lang="ja">ツイート</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+
+						<li>
+						<a class="twitter-timeline" href="https://twitter.com/hashtag/%E3%83%AC%E3%82%A2%E3%83%AB%E3%83%9E%E3%83%89%E3%83%AA%E3%83%BC%E3%83%89" data-widget-id="479852409217241088" data-aria-polite="assertive" width="305" height="753" lang="ja">#レアルマドリード</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+
+						</ul>
+						</div><!--/timeline-->
+
+						<div id="timelinesp">
+						<ul>
+						<li>
+						<a class="twitter-timeline" href="https://twitter.com/LIVE_R_MADRIDJP" data-widget-id="479850679649849344" data-aria-polite="assertive"  width="319" height="480" lang="ja">ツイート</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+
+						<li>
+						<a class="twitter-timeline" href="https://twitter.com/hashtag/%E3%83%AC%E3%82%A2%E3%83%AB%E3%83%9E%E3%83%89%E3%83%AA%E3%83%BC%E3%83%89" data-widget-id="479852409217241088" data-aria-polite="assertive"  width="319" height="480" lang="ja">#レアルマドリード</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+
+						</ul>
+				</div><!--/timeline-->
+
+
+
+		</div><!--/contentsleft-->
+
+
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_sidebar.php'); ?>
+
+
+<div id="footersp" class="clearfix">
+
+
+	<div id="berliveT">
+	<p class="title">サポート</p>
+	</div>
+
+
+
+<div id="support" class="clearfix">
+<ul>
+<li><a href="/090/508/01">会員登録</a></li>
+<li><a href="/090/518/01">サービス内容・ご利用方法</a></li>
+<li><a href="/090/515/01">対応機種</a></li>
+<li><a href="/090/511/01">利用規約</a></li>
+<li><a href="/090/516/01">プライバシーポリシー</a></li>
+<li><a href="/090/512/01">特定商取引法に基づく表示</a></li>
+<li><a href="/090/517/01">お問合わせについて</a></li>
+<li><a href="https://connect.auone.jp/net/id/sp/guide/kessai_guide/kessai_service.html"><img src="/images/au_payment.png" width="150" height="23"></a></li>
+<li><a href="/090/510/01">会員退会</a></li>
+</ul>
+</div>
+
+
+
+
+</div><!--/contents-->
+
+
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_footer.php'); ?>
+
+
+
+
+
+
+
+

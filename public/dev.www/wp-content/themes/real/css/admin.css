@@ -1,0 +1,165 @@
+/* カスタム投稿タイプの削除ボタンを隠す */
+#cptg-list .row-actions span{
+	display: none;
+}
+/* class="field field_type-text field_key-field_539e9a7c01c62" */
+.field_type-text, .field_type-textarea {
+	background: -moz-linear-gradient(top,#FFF 0%,#EEE);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+	border-top: 1px solid #AAA;
+	color:#111;
+}
+
+.field_type-textarea textarea{
+	resize: vertical;
+}
+.acf_postbox.no_box > h3 {
+	border-width:0 0 5px 0 ;
+	border-color:#6D6D6D;
+	border-style:solid;
+	background:#CCCCCC;
+	color:#494949;
+	line-height:140%;
+	font-weight:bold;
+}
+#acf-match_date {
+    float: left;
+    width: 20%;
+}
+#acf-opponent {
+    float: left;
+    width: 20%;
+}
+#acf-section {
+    float: left;
+    width: 20%;
+}
+#acf-status {
+    float: left;
+    width: 20%;
+}
+#acf-match_video {
+    float: left;
+    width: 20%;
+}
+#acf-match_pic {
+    float: left;
+    width: 20%;
+}
+#acf-home_points {
+    float: left;
+    width: 33%;
+}
+#acf-half_all_score {
+    float: left;
+    width: 33%;
+}
+#acf-away_points {
+    float: left;
+    width: 33%;
+}
+.inside:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}
+div[id*="home"] {
+    float: left;
+    width: 48%;
+    display: block;
+}
+div[data-field_type="message"] {
+    float: left;
+    width: 20%;
+	color:#111;
+}
+div[id*="away"] {
+    float: right;
+    width: 48%;
+	display: block;
+}
+#acf_464 p.label,
+#acf_575 p.label { display: none }
+div[data-field_type="message"] {
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+	background: -moz-linear-gradient(top,#FFF 0%,#EEE);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+}
+div#acf_acf-469 .inside,
+div#acf_acf-464 .inside,
+div#acf_acf-575 .inside {
+    margin: 0 auto;
+    width: 100%;
+    display: table;
+    border-top: none;
+}
+div#acf_acf-469 div#acf-hp_jugador, div#acf_acf-469 div#acf-ap_jugador{
+    width: 50%;
+    display: table-cell;
+    margin:0 auto;
+}
+/*管理画面カスタマイズ*/
+#update-nag, .update-nag {
+    display: none;
+}
+#poststuff h3 {
+    font-size: 11px;
+    line-height: 0.5;
+}
+.postbox .inside {
+    /*line-height: 0.5;*/
+    font-size: 12px;
+}
+.wrap h2 {
+    font-size: 12px;
+    /* font-weight: 400; */
+    padding: 3px;
+    line-height: 10px;
+}
+.wrap .add-new-h2 {
+    margin-left: 4px;
+    padding: 4px 8px;
+    position: relative;
+    top: 0px;
+    text-decoration: none;
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 12px;
+}
+#titlediv #title {
+    padding: 3px 8px;
+    font-size: 16px;
+    line-height: 100%;
+    height: 1.7em;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 3px;
+    background-color: #fff;
+}
+#post-body-content {
+    margin-bottom: 1px; 
+}
+#titlediv #title-prompt-text {
+    color: #777;
+    position: absolute;
+    font-size: 14px;
+    padding: 6px;
+}
+input, select, textarea {
+    font-size: 12px;
+}
+
+
+/*ニュースカスタマイズ*/
+.infotext {
+    color: #FF0000;
+    padding-left:10px;
+}

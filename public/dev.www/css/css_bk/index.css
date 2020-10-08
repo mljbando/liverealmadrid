@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* ===================================================================
+CSS information
+ file name  :  index.css
+ style info :  TOPページのCSS
+=================================================================== */
+
+/*----------------------------------------------------------------------------------
+		 								TOP
+------------------------------------------------------------------------------------*/
+div#contents_left div#flash {
+	margin-bottom: 20px;
+}
+
+div#contents_left div#flash img {
+	width: 635px;
+	-moz-box-shadow: 0px 2px 5px #333;
+	-webkit-box-shadow: 0px 2px 5px #333;
+	-o-box-shadow: 0px 2px 5px #333;
+	-ms-box-shadow: 0px 2px 5px #333;
+	box-shadow: 0px 2px 5px #333;
+}
+
+
+
+div#contents_left div#news_box {
+	width: 635px;
+	background: url(/images/index/bg_news_box.gif) 0 bottom no-repeat;
+}
+
+
+div#contents_left div#news_box:after {
+	content: "."; display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+div#contents_left div#news_box { display: inline-block; }
+div#contents_left div#news_box { display: block; }
+
+
+div#news_box h2 {
+	padding: 0 0 10px 10px;
+	background: #fff;
+	width: 301px;
+}
+
+div#news_box div.left {
+	width: 311px;
+	float: left;
+}
+
+div#news_box div.right {
+	width: 311px;
+	float: right;
+}
+
+/*----------------------------------------------------------------------------------
+		 								新着ニュース部分
+------------------------------------------------------------------------------------*/
+
+div#news_box div.left div.new_news {
+	border: 1px solid #aebcd3;
+	border-bottom: none;
+	padding: 0 10px 12px;
+}
+
+div.new_news ul {
+	margin: 0 0 12px;
+}
+
+div.new_news ul li {
+	position: relative;
+	width: 190px;
+	padding: 13px 0 15px 99px;
+	border-bottom: 1px solid #c8c8c8;
+	margin: 0 0 2px;
+	min-height: 58px;
+}
+
+* html div.new_news ul li {
+	height: 58px;
+}
+
+div.new_news ul li p.photo {
+	position: absolute;
+	top: 13px;
+	left: 0;
+}
+
+div.new_news ul li p.photo img {
+	width: 92px;
+	/*height: 58px;*/
+	-moz-box-shadow: 1px 1px 1px #999;
+	-webkit-box-shadow: 1px 1px 1px #999;
+	-o-box-shadow: 1px 1px 1px #999;
+	-ms-box-shadow: 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px #999;
+}
+
+div.new_news ul li p.data {
+	font-size: 83%;
+	line-height: 1.4;
+}
+
+div.new_news ul li h3 {
+	font-size: 92%;
+	line-height: 1.4;
+}
+
+div.new_news ul li p.txt {
+	font-size: 83%;
+	line-height: 1.4;
+}
+
+div.new_news p.tonews {
+	text-align: right;
+}
+
+/*----------------------------------------------------------------------------------
+		 								ピックアップ部分
+------------------------------------------------------------------------------------*/
+
+div#news_box div.right h2 {
+	padding-top: 10px;
+}
+
+div#news_box div.right div.pickup {
+	border: 1px solid #aebcd3;
+	border-bottom: none;
+	padding: 0 0 12px 9px;
+	width: 300px;
+}
+
+div.pickup ul {
+	clear: both;
+	padding: 12px 0 0 0;
+	width: 300px;
+}
+
+div.pickup ul:after {
+	content: "."; display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+div.pickup ul { display: inline-block; }
+div.pickup ul { display: block; }
+
+div.pickup ul li {
+	width: 92px;
+	float: left;
+	padding: 0 8px 0 0;
+}
+
+div.pickup ul li p.photo {
+	margin: 0 0 7px;
+}
+
+div.pickup ul li p.photo img {
+	width: 92px;
+	height: 58px;
+	-moz-box-shadow: 1px 1px 1px #999;
+	-webkit-box-shadow: 1px 1px 1px #999;
+	-o-box-shadow: 1px 1px 1px #999;
+	-ms-box-shadow: 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px #999;
+}
+
+
+div.pickup ul li h3 {
+	line-height: 1.4;
+	font-size: 92%;
+	padding-bottom: 3px;
+}
+
+
+
+
+
+
+/* 左側下部バナー */
+
+div#contents_left ul.top_bottom_bnr {
+	padding: 10px 0 0 0;
+}
+
+div#contents_left ul.top_bottom_bnr:after {
+	content: "."; display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+div#contents_left ul.top_bottom_bnr { display: inline-block; }
+div#contents_left ul.top_bottom_bnr { display: block; }
+
+div#contents_left ul.top_bottom_bnr li {
+	float: left;
+}
+
+div#contents_left ul.top_bottom_bnr li.right {
+	float: right;
+}
+
+
+
+
+
+
+/* バナー */
+div#bana  img {
+	width: 100%;
+	margin: 3px 0px 3px 0px;
+	-moz-box-shadow: 0px 3px 3px #999;
+	-webkit-box-shadow: 0px 3px 3px #999;
+	-o-box-shadow: 0px 3px 3px #999;
+	-ms-box-shadow: 0px 3px 3px #999;
+	box-shadow: 0px 3px 3px #999;
+
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------
+		 								Proximos partidos
+------------------------------------------------------------------------------------*/
+	#bodyContent div.nextMatches{background:#3a4660 url(../img/nextmatchBg.gif) repeat-x top left; position:relative;height:12.3em;}
+	#bodyContent div.nextMatches h3{color:#fef8fa; font-size:1.1em; font-weight:normal; padding:.2em 0 .3em .9em; margin:0 .2em; border-bottom:.1em solid #000;}
+	#bodyContent div.nextMatchesEnlaces p{font-size:1.1em; color:#fff; background:#3a4660 url(../img/bulletp.gif) no-repeat 2em .7em; padding:.4em 0 .2em 3em;border-bottom:1px solid #000;}
+	#bodyContent div.nextMatchesEnlaces p a{text-decoration:none; font-weight:bold; color:#ffcc00;}
+	#bodyContent #alturaNext{padding:0;margin:0;background:none;}
+	#bodyContent div.nextMatches ul.primerNivel{padding:.4em 0 0 1.2em;}
+	#bodyContent div.nextMatches ul.primerNivel li{float:left;  background:#585882 url(../img/nextMatchlibg.gif) repeat-x top left; margin-right:.4em; padding:.3em 1em .2em 1em; font-size:.9em; color:#b3b5ce; cursor:pointer;}
+	#bodyContent div.nextMatches ul.primerNivel li.sel{ background:#585882 url(../img/nextMatchlibgsel.gif) repeat-x top left; color:#333; cursor:default;}
+		
+		#bodyContent div.nextMatches ul.primerNivel ul{background-color:#b2bcd0; padding:0 0 0 1.2em; border-bottom:.5em solid #fff; position:absolute; top:4.7em; left:0;width:32em;}
+		#bodyContent div.nextMatches ul.primerNivel li ul li{font-weight:bold; font-size:1em; font-family:verdana; margin:0 0 0 .1em; padding:.2em 1.2em .2em 1.8em; display:block; color:#fff; background:#9ba7bf url(../img/bullet_tri_dcha_morado.gif) no-repeat .7em .6em;}
+		#bodyContent div.nextMatches ul.primerNivel li ul li.sel{background:#fff url(../img/bullet_tri_down_morado.gif) no-repeat .9em .8em; padding:.2em 1.5em .2em 2em;}
+			
+			#bodyContent div.nextMatches dl{background-color:#fff; padding:.1em; font-family:arial; font-size:1.1em; border-bottom:.1em solid #b2bcd0; position:absolute; top:2em; left:0;width:29.9em;}
+			html:first-child #bodyContent div.nextMatches dl{width:29em!important;}
+			#bodyContent div.nextMatches dl dt{float:left; width:4.7em; padding:.2em 0 .1em 2em;color:#333333;}
+			#bodyContent div.nextMatches dl dd{padding:.2em 0;color:#333333;}
+			#bodyContent div.nextMatches dl dd.impar{background-color:#d8dde7;}			

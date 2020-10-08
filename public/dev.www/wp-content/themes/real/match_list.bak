@@ -1,0 +1,95 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage Default_Theme
+ * Template Name: 試合日程一覧ページ
+ */
+ 
+/**********************
+ * テーブルの出力方法 *
+ **********************
+
+// すべてのデータを出力（idはTablepress参照）
+<?php echo do_shortcode( '[table id=2 /]' ); ?>
+
+// 最初のカラムがLGであるデータだけを出力
+<?php echo do_shortcode( '[table-while id=2 key="LG"/]' );  ?>
+
+// デフォルトでは最初のカラムを非表示にしているので
+// 表示させる場合は"key_disp=1"を追記
+<?php echo do_shortcode( '[table-while id=2 key="LG" key_disp=1/]' );  ?>
+*/
+?>
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_header.php'); ?>
+
+<div id="contents" class="clearfix">
+
+	<div id="contentsleft" class="clearfix">
+
+
+		<div id="contentsarea" class="clearfix">
+
+
+				<div id="archive-news" class="clearfix">
+
+
+<div id="top_navi">
+<h2 class="page_title">試合</h2>
+<ul class="tabNav">
+<li class="ALL"><a href="#ALL"><span>全ての試合</span></a></li>
+<li class="FM"><a href="#FM"><span>親善試合</span></a></li>
+<li class="LG"><a href="#LG"><span>リーガ</span></a></li>
+<li class="CL"><a href="#CL"><span>チャンピオンズリーグ</span></a></li>
+</ul>
+</div>
+
+<div id="sche_left">
+
+<div id="ALL">
+<?php echo do_shortcode( '[table id=2 /]' ); ?>
+</div>
+<hr>
+<div id="FM">
+<?php echo do_shortcode( '[table-while id=2 key="FM"/]' ); ?>
+</div>
+
+<hr>
+<div id="LG">
+<?php echo do_shortcode( '[table-while id=2 key="LG" key_disp=1/]' ); ?>
+</div>
+
+<hr>
+<div id="CL">
+<?php echo do_shortcode( '[table-while id=2 key="CL"/]' ); ?>
+</div>
+</div><!-- //end sche_left -->
+
+
+
+
+
+
+
+				</div><!--/archive-news-->
+
+
+
+
+		</div><!--/contentsarea-->
+
+
+</div><!--/contentsleft-->
+
+
+
+<div id="sp">
+<?php include (COMMONTEMPLATEPATH . '/common_sidebar.php'); ?>
+</div>
+
+
+</div><!--/contents-->
+
+
+<?php include (COMMONTEMPLATEPATH . '/common_footer.php'); ?>

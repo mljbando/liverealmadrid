@@ -1,0 +1,560 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+.no-svg .wadus {
+  background-image: url("../images/icons/png/arrow_down.png");
+}
+
+.wadus {
+  background-image: url("../images/icons/svg/arrow_down.svg");
+}
+
+.opta-widget-container .timeline .match-score-details .score-line span.score, .o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-home,
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-away, .o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-home,
+.o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-away, .o_commentary .opta-widget-container .commentary li .comment-time, .o_team_compare .opta-widget-container .comparison .prominent .team1, .o_team_compare .opta-widget-container .comparison .prominent .team2, .o_league_results .opta-widget-container tbody td.st_played,
+.o_league_results .opta-widget-container tbody td.st_won,
+.o_league_results .opta-widget-container tbody td.st_drawn,
+.o_league_results .opta-widget-container tbody td.st_lost,
+.o_league_results .opta-widget-container tbody td.st_goaldiffall,
+.o_league_results .opta-widget-container tbody td.st_points,
+.o_league_results .opta-widget-container tbody td.position,
+.o_champions_results .opta-widget-container tbody td.st_played,
+.o_champions_results .opta-widget-container tbody td.st_won,
+.o_champions_results .opta-widget-container tbody td.st_drawn,
+.o_champions_results .opta-widget-container tbody td.st_lost,
+.o_champions_results .opta-widget-container tbody td.st_goaldiffall,
+.o_champions_results .opta-widget-container tbody td.st_points,
+.o_champions_results .opta-widget-container tbody td.position,
+.o_league_results_small .opta-widget-container tbody td.st_played,
+.o_league_results_small .opta-widget-container tbody td.st_won,
+.o_league_results_small .opta-widget-container tbody td.st_drawn,
+.o_league_results_small .opta-widget-container tbody td.st_lost,
+.o_league_results_small .opta-widget-container tbody td.st_goaldiffall,
+.o_league_results_small .opta-widget-container tbody td.st_points,
+.o_league_results_small .opta-widget-container tbody td.position, .o_calendars .opta-widget-container .fixtures .matches dt .match-score {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+/*  ===============*/
+/*  = default_box =*/
+/*  ===============*/
+.opta-widget-container {
+  margin-top: 0;
+  /*  ============ */
+  /*  = timeline = */
+  /*  ============ */
+}
+.opta-widget-container h2 {
+  border-radius: none;
+  display: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.opta-widget-container .timeline {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+}
+.opta-widget-container .timeline .timeline-graph span {
+  background-color: #0255A5;
+}
+.opta-widget-container .timeline .match-score-details .score-line span {
+  font-size: 16px;
+}
+.opta-widget-container .timeline .match-score-details .score-line span.score {
+  font-size: 52px;
+  word-spacing: -5px;
+}
+.opta-widget-container .timeline .match-score-details.hasImg .score-line .home-team {
+  padding-right: 5px;
+  padding-left: 11%;
+}
+.opta-widget-container .timeline .match-score-details .hometeam-crest {
+  left: 25px;
+}
+.opta-widget-container .timeline .match-score-details .awayteam-crest {
+  right: 25px;
+}
+.opta-widget-container .timeline .match-score-details {
+  padding-top: 0;
+}
+.opta-widget-container .timeline .match-details {
+  bottom: -9px;
+}
+
+/*  ============= */
+/*  = formation = */
+/*  ============= */
+.o_formation {
+  overflow: hidden;
+}
+
+.o_formation .opta-widget-container table {
+  display: none;
+}
+
+.opta-widget-container .formation {
+  border: none;
+}
+
+/*  ================== */
+/*  = player_compare = */
+/*  ================== */
+.o_player_compare .opta-widget-container .comparison {
+  background-color: #F6F6F6;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+}
+.o_player_compare .opta-widget-container .comparison form,
+.o_player_compare .opta-widget-container .comparison table {
+  border: 1px solid #D9D9D9;
+}
+.o_player_compare .opta-widget-container .comparison legend {
+  display: none;
+}
+.o_player_compare .opta-widget-container dl {
+  display: none;
+}
+.o_player_compare .opta-widget-container .comparison table {
+  background-color: #F6F6F6;
+  border-bottom: none;
+}
+.o_player_compare .opta-widget-container .comparison thead th {
+  display: none;
+}
+.o_player_compare .opta-widget-container .comparison td.player1,
+.o_player_compare .opta-widget-container .comparison td.player2 {
+  font-weight: bold;
+  color: #8A8A8A;
+  font-size: 14px;
+}
+.o_player_compare .opta-widget-container .comparison tbody th {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #666666;
+}
+.o_player_compare .opta-widget-container .comparison td.image.player1,
+.o_player_compare .opta-widget-container .comparison td.image.player2 {
+  border-top: 1px solid #000;
+}
+.o_player_compare .opta-widget-container .comparison tbody th img {
+  margin: 0 auto;
+}
+
+.o_match_stats .opta-widget-container .tabs-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-content li {
+  background-color: #F6F6F6;
+}
+.o_match_stats .opta-widget-container table {
+  background-color: #F6F6F6;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container img {
+  display: inline-block;
+}
+
+.o_matchstats .opta-widget-container h2 {
+  background: #ddd;
+  color: #404040;
+}
+.o_matchstats .opta-widget-container .matchstats-lineup .lineup-coach {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dt, .o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dt {
+  font-size: 11px;
+  color: #666666;
+  text-transform: uppercase;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd .home-percentage, .o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd .home-percentage {
+  background: none;
+  background-color: #339933;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd .away-percentage, .o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd .away-percentage {
+  background: none;
+  background-color: #0255A5;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav, .o_team_compare .opta-widget-container .tabs-active .tabs-nav {
+  background: none;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-home,
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-away, .o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-home,
+.o_team_compare .opta-widget-container .matchstats-teamstats-container .tabs-content dd tbody td.stat-away {
+  color: #666;
+  font-size: 24px;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav li, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li {
+  font-size: 13px;
+  margin-top: 15px;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav li a, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li a {
+  color: #999999;
+  padding: 2px 18px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav li, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li {
+  height: auto;
+  margin-left: 12px;
+}
+.o_match_stats .opta-widget-container .matchstats-teamstats-container .matchup, .o_team_compare .opta-widget-container .matchstats-teamstats-container .matchup {
+  top: 74px;
+}
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav li.tabs-selected a,
+.o_match_stats .opta-widget-container .tabs-active .tabs-nav li a:hover, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li.tabs-selected a,
+.o_team_compare .opta-widget-container .tabs-active .tabs-nav li a:hover {
+  background-color: #F6F6F6;
+  border: none;
+  color: #333333;
+  border: 1px solid #D9D9D9;
+  border-bottom: none;
+}
+
+/*  ============== */
+/*  = commentary = */
+/*  ============== */
+.o_commentary .opta-widget-container .commentary {
+  border: 1px solid #D9D9D9;
+  border-bottom: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: #F6F6F6;
+}
+.o_commentary .opta-widget-container li {
+  font-size: 12px;
+  color: #515151;
+  border-top: 1px solid #D9D9D9;
+}
+.o_commentary .opta-widget-container li span {
+  line-height: 15px;
+  color: #999;
+}
+.o_commentary .opta-widget-container li {
+  border-top: none;
+}
+.o_commentary .opta-widget-container .commentary li .comment-time {
+  font-size: 14px;
+  color: #666666;
+}
+
+.m_highlighted_aside .o_commentary .commentary li {
+  display: none;
+}
+.m_highlighted_aside .o_commentary .commentary li:first-child, .m_highlighted_aside .o_commentary .commentary li:first-child + li {
+  display: block;
+}
+
+/*  =========== */
+/*  = heatmap = */
+/*  =========== */
+.o_heat_map {
+  border-top: 1px solid #D9D9D9;
+  overflow: hidden;
+}
+.o_heat_map .opta-widget-container .chalkboard {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #D9D9D9;
+}
+.o_heat_map .opta-widget-container .chalkboard div.teams dl.starters dt {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  color: #000;
+}
+.o_heat_map .chalkboard dl.subs ul.team li:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.o_heat_map .canvas-pitch .time-controls {
+  border: none;
+}
+.o_heat_map .canvas-pitch .time-controls button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  min-height: 37px;
+  font-size: 11px;
+  color: #666666;
+  text-transform: uppercase;
+}
+.o_heat_map .canvas-pitch .time-controls button:hover,
+.o_heat_map .canvas-pitch .time-controls button.selected {
+  background-image: none;
+  background-color: #0255A5;
+  color: #fff;
+  border: 1px solid #0255A5;
+}
+.o_heat_map .canvas-pitch .button-panel,
+.o_heat_map .heatmap.canvas-pitch .time-panel {
+  background-color: transparent;
+}
+.o_heat_map .canvas-pitch .time-line-gap {
+  background: #F6F6F6;
+}
+
+.o_team_compare .comparison {
+  border: 1px solid #d9d9d9;
+}
+.o_team_compare .comparison table {
+  border: none;
+}
+.o_team_compare .comparison thead {
+  display: none;
+}
+.o_team_compare .prominent {
+  font-size: x-small;
+}
+.o_team_compare .prominent th, .o_team_compare .prominent td {
+  background-color: #f6f6f6;
+}
+.o_team_compare .opta-widget-container .comparison .prominent .team1, .o_team_compare .opta-widget-container .comparison .prominent .team2 {
+  font-size: 4.4em;
+}
+.o_team_compare .opta-widget-container .comparison .prominent .team1.crest {
+  padding-left: 20px;
+  padding-right: 4px;
+}
+.o_team_compare .opta-widget-container .comparison .prominent .team2.crest {
+  padding-left: 4px;
+  padding-right: 20px;
+  text-align: right;
+}
+.o_team_compare .opta-widget-container .comparison .prominent .team2.crest img {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.o_team_compare .opta-widget-container .comparison {
+  border-radius: 0;
+}
+.o_team_compare .opta-widget-container .comparison .prominent th {
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+.o_team_compare .opta-widget-container .comparison .tabs-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li h3 {
+  display: none;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li div {
+  margin-top: 0;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tr td, .o_team_compare .opta-widget-container .tabs-active .tabs-content li tr th {
+  background: #f6f6f6;
+  border-bottom: none;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tr td, .o_team_compare .opta-widget-container .tabs-active .tabs-content li tr th {
+  background: #ebebeb;
+  border-bottom: none;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tr:nth-child(odd) td, .o_team_compare .opta-widget-container .tabs-active .tabs-content li tr:nth-child(odd) th {
+  background: #f6f6f6;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody {
+  font-size: x-small;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody td, .o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody th {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody th {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody .team1, .o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody .team2 {
+  font-size: 1.4em;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody .team1 {
+  border-right: 1px solid #d9d9d9;
+  text-align: right;
+  padding-right: 29px;
+}
+.o_team_compare .opta-widget-container .tabs-active .tabs-content li tbody .team2 {
+  border-left: 1px solid #d9d9d9;
+  text-align: left;
+  padding-left: 29px;
+}
+
+.o_league_results .opta-widget-container .standings-container,
+.o_champions_results .opta-widget-container .standings-container,
+.o_league_results_small .opta-widget-container .standings-container {
+  border: none;
+}
+.o_league_results .opta-widget-container thead th,
+.o_champions_results .opta-widget-container thead th,
+.o_league_results_small .opta-widget-container thead th {
+  border-top: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #767676;
+  font-weight: normal;
+}
+.o_league_results .opta-widget-container tbody td,
+.o_champions_results .opta-widget-container tbody td,
+.o_league_results_small .opta-widget-container tbody td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 13px;
+}
+.o_league_results .opta-widget-container tbody td.position,
+.o_champions_results .opta-widget-container tbody td.position,
+.o_league_results_small .opta-widget-container tbody td.position {
+  text-align: center;
+}
+
+.o_calendars .opta-widget-container .fixtures h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #767676;
+  font-weight: normal;
+  background: transparent;
+  border-top: none;
+}
+.o_calendars .opta-widget-container .fixtures {
+  border: none;
+}
+.o_calendars .opta-widget-container .fixtures h4 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: none;
+  background: #F0F0F0;
+}
+.o_calendars .opta-widget-container .fixtures .matches dt {
+  padding: 25px 0;
+}
+.o_calendars .opta-widget-container .fixtures .matches dt span span.home-crest,
+.o_calendars .opta-widget-container .fixtures .matches dt span span.away-crest {
+  margin-top: -5px;
+}
+.o_calendars .opta-widget-container .fixtures .matches dt .match-score {
+  font-size: 13px;
+  color: #404040;
+}
+.o_calendars .opta-widget-container .fixtures .matches dt .home-side,
+.o_calendars .opta-widget-container .fixtures .matches dt .away-side,
+.o_calendars .opta-widget-container abbr {
+  font-size: 13px;
+  color: #404040;
+}
+.o_calendars .opta-widget-container .fixtures .matches dt .away-side img {
+  margin-left: 8px;
+}
+.o_calendars .opta-widget-container .fixtures .matches .match-details dt {
+  padding: 0;
+}
+.o_calendars .opta-widget-container .fixtures .matches dd {
+  background: transparent;
+  background-color: #f4f4f4;
+}
+.o_calendars .opta-widget-container .fixtures dd .match-details {
+  padding: 12px 0 12px 10px;
+}
+.o_calendars .opta-widget-container button.details-collapsed,
+.o_calendars .opta-widget-container button.details-expanded {
+  top: 22px;
+}
+
+/*  =================== */
+/*  = mediaquery_opta = */
+/*  =================== */
+@media only screen and (max-width: 767px) {
+  .opta-widget-container .timeline.narrow .match-score-details .score-line span {
+    font-size: 12px;
+    width: 119px;
+  }
+
+  .opta-widget-container .timeline .match-score-details .score-line span.score {
+    font-size: 28px;
+  }
+
+  .opta-widget-container .timeline .match-details {
+    bottom: -3px;
+    padding-right: 100px;
+    width: auto;
+    line-height: normal;
+    height: auto;
+  }
+
+  .opta-widget-container .timeline.narrow .match-score-details .score-line .score {
+    width: 20%;
+    font-size: 24px;
+  }
+
+  .o_match_stats .opta-widget-container .tabs-active .tabs-nav, .o_team_compare .opta-widget-container .tabs-active .tabs-nav {
+    padding-bottom: 4px;
+  }
+  .o_match_stats .opta-widget-container .tabs-active .tabs-nav li, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .o_match_stats .opta-widget-container .tabs-active .tabs-nav li a, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li a {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: normal;
+    margin: 0 8px 8px;
+    border: none !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid transparent !important;
+  }
+  .o_match_stats .opta-widget-container .tabs-active .tabs-nav li.tabs-selected a, .o_team_compare .opta-widget-container .tabs-active .tabs-nav li.tabs-selected a {
+    border-bottom-color: black !important;
+    color: #000;
+  }
+
+  .m_highlighted_summary_game_actions div + a {
+    margin-bottom: 0;
+  }
+}
