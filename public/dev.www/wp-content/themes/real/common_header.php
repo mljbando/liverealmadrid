@@ -3,7 +3,6 @@
  * @package WordPress
  * @subpackage real_Theme
  */
-
 ?>
 <!doctype html>
 <html lang="jp">
